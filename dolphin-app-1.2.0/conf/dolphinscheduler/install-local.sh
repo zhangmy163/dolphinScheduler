@@ -90,7 +90,7 @@ zkQuorum="127.0.0.1:2181"
 # install hosts
 # Note: install the scheduled hostname list. If it is pseudo-distributed, just write a pseudo-distributed hostname
 # zmy update 20200210
-ips="172.16.208.76"
+ips="127.0.0.1"
 
 #zmy add 20200210 if sshport is updated ,default is 22
 sshport="22"
@@ -99,22 +99,22 @@ sshport="22"
 # run master machine
 # Note: list of hosts hostname for deploying master
 # zmy update 20200210
-masters="172.16.208.76"
+masters="127.0.0.1"
 
 # run worker machine
 # note: list of machine hostnames for deploying workers
 # zmy update 20200210
-workers="172.16.208.76"
+workers="127.0.0.1"
 
 # run alert machine
 # note: list of machine hostnames for deploying alert server
 # zmy update 20200210
-alertServer="172.16.208.76"
+alertServer="127.0.0.1"
 
 # run api machine
 # note: list of machine hostnames for deploying api server
 # zmy update 20200210
-apiServers="172.16.208.76"
+apiServers="127.0.0.1"
 
 # alert config
 # mail protocol
@@ -123,7 +123,7 @@ mailProtocol="SMTP"
 
 # mail server host
 # zmy update 20200210
-mailServerHost="smtp.163.com"
+mailServerHost="xxx.xxx.xxx"
 
 # mail server port
 # zmy update 20200210
@@ -131,15 +131,15 @@ mailServerPort="25"
 
 # sender
 # zmy update 20200210
-mailSender="cig_devgit@163.com"
+mailSender="xxx"
 
 # user
 # zmy update 20200210
-mailUser="cig_devgit@163.com"
+mailUser="xxx"
 
 # sender password
 # zmy update 20200210
-mailPassword="cig123"
+mailPassword="xxx"
 
 # TLS mail protocol support
 starttlsEnable="false"
@@ -188,11 +188,11 @@ s3SecretKey="xxxxxxxxxx"
 
 # resourcemanager HA configuration, if it is a single resourcemanager, here is yarnHaIps=""
 # zmy update 20200210
-yarnHaIps="172.16.208.76"
+yarnHaIps="127.0.0.1"
 
 # if it is a single resourcemanager, you only need to configure one host name. If it is resourcemanager HA, the default configuration is fine.
 # zmy update 20200210
-#singleYarnIp="172.16.208.76"
+#singleYarnIp="127.0.0.1"
 
 # hdfs root path, the owner of the root path must be the deployment user. 
 # versions prior to 1.1.0 do not automatically create the hdfs root directory, you need to create it yourself.

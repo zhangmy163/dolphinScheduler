@@ -53,12 +53,10 @@ $dshostpath/bin/dolphinscheduler-daemon.sh start api-server
 
 echo "启动master-server"
 $dshostpath/bin/dolphinscheduler-daemon.sh stop master-server
-python $dshostpath/script/del-zk-node.py 127.0.0.1 /dolphinscheduler/masters
 $dshostpath/bin/dolphinscheduler-daemon.sh start master-server
 
 echo "启动worker-server"
 $dshostpath/bin/dolphinscheduler-daemon.sh stop worker-server
-python $dshostpath/script/del-zk-node.py 127.0.0.1 /dolphinscheduler/workers
 $dshostpath/bin/dolphinscheduler-daemon.sh start worker-server
 
 
